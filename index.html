@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&display=swap');
+    @font-face {
+      font-family: "Kumbh";
+      src: url("https://fonts.google.com/specimen/Kumbh+Sans");
+    }
+    /* Estilos Generales */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body */
+    body {
+      height: 100vh;
+      width: 1440px;
+      font-size: 18px;
+      background: url('./images/bg-pattern-bottom.svg') 50rem 20rem no-repeat,
+        url('./images/bg-pattern-top.svg') -20rem -30rem no-repeat;
+      background-color: #19a1ad;
+      background-attachment: fixed;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .texto-oscuro{
+      font-family: "Kumbh", sans-serif;
+      font-weight: 700;
+      color: #2D3248;
+    }
+    .texto-claro{
+      font-family: "Kumbh", sans-serif;
+      font-weight: 400;
+      color: #6A6F81;
+    }
+    .font-14{
+      font-size: 14px;
+    }
+    .font-10{
+      font-size: 10px;
+      margin-top: 5px;
+      letter-spacing: 2px;
+    }
+    b{
+      color: #6A6F81;
+      font-weight: 400;
+    }
+    /* Tarjeta */
+    .espaciador {
+      visibility: hidden;
+    }
+
+    .box {
+      background-image: url('./images/bg-pattern-card.svg');
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+    }
+
+    .top {
+      max-height: 3.5rem;
+      z-index: 100;
+      padding-top: 5rem;
+    }
+
+    .center {
+      background-color: white;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      padding: 7rem;
+      padding-top: 4rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .bottom {
+      background-color: white;
+      border-top: 1px solid #ededed;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      width: 100%;
+      padding: 1.5rem 0;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    }
+
+    .top img {
+      border-radius: 50%;
+      border: white solid 5px;
+    }
+
+    .content {
+      padding-top: 0.5rem;
+    }
+
+    .content-bottom {
+      width: 85%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+    .numeros{
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    }
+
+    /* Footer */
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Espacio en blanco para alinear todo el contenido -->
+  <div class="espaciador">a</div>
+
+  <!-- Caja contenedora -->
+  <div class="box">
+    <div class="top">
+      <img src="./images/image-victor.jpg" alt="">
+    </div>
+    <div class="center">
+      <div class="content">
+        <p class="texto-oscuro">Victor Crest <b>26</b></p>
+      </div>
+      <div class="content">
+        <p class="texto-claro font-14">London</p>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="content content-bottom">
+        <div class="numeros">
+          <p class="texto-oscuro">
+            80K
+          </p>
+          <p class="texto-claro font-10">
+            Followers
+          </p>
+        </div>
+        <div class="numeros">
+          <p class="texto-oscuro">
+            803K
+          </p>
+          <p class="texto-claro font-10">
+            Likes
+          </p>
+        </div>
+        <div class="numeros">
+          <p class="texto-oscuro">
+            1.4K
+          </p>
+          <p class="texto-claro font-10">
+            Photos
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
